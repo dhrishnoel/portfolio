@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- =========================================================
+       SEO / META TAGS
+       EDIT ME: replace [YOUR NAME], the description, and the
+       Open Graph image/url once your site is deployed.
+  ========================================================== -->
+  <title>Dhrishh | Aspiring Data Scientist</title>
+  <meta name="description" content="Portfolio of Dhrishh, an aspiring Data Scientist specializing in Python, statistics, machine learning and financial data analysis." />
+  <meta name="author" content="Dhrishh" />
+
+  <!-- Open Graph (controls how the link looks when shared on LinkedIn, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dhrishh | Aspiring Data Scientist" />
+  <meta property="og:description" content="Portfolio showcasing data science, machine learning and fintech analytics projects." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <!-- EDIT ME: once deployed, set this to your live GitHub Pages URL -->
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/" />
+
+  <link rel="icon" href="data:," />
+
+  <!-- Fonts: Space Grotesk (headings), Inter (body), JetBrains Mono (data/code accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo">~/dhrishh</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. HERO
+         EDIT ME: swap the intro line and the profile image.
+    ========================================================== -->
+    <section id="home" class="hero section">
+      <div class="hero-text fade-in">
+        <p class="eyebrow">// aspiring data scientist</p>
+        <h1>Hi, I&rsquo;m Dhrishh.</h1>
+        <p class="hero-sub">
+          I turn raw data into decisions &mdash; using Python, statistics and
+          machine learning, with a growing focus on financial and market data.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="assets/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+        </div>
+
+        <div class="hero-social">
+          <!-- EDIT ME: replace with your real LinkedIn URL -->
+          <a href="https://www.linkedin.com/in/YOUR-USERNAME/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/dhrishnoel" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in">
+        <!-- Signature element: a small "terminal" panel that types itself out on load -->
+        <div class="terminal-panel" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal-title">profile.py</span>
+          </div>
+          <pre class="terminal-body"><code id="terminalCode"></code><span class="cursor">&#9608;</span></pre>
+        </div>
+
+        <!-- EDIT ME: replace with assets/profile.jpg (a real photo). -->
+        <div class="profile-frame">
+          <img src="assets/profile.jpg" alt="Portrait of Dhrishh" class="profile-img" onerror="this.parentElement.classList.add('img-fallback')" />
+          <span class="profile-fallback-label">assets/profile.jpg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. ABOUT
+         EDIT ME: this paragraph is written from real background —
+         adjust freely as your story evolves.
+    ========================================================== -->
+    <section id="about" class="section">
+      <p class="eyebrow">~/about</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <p class="about-text">
+          I&rsquo;m currently pursuing an <strong>MSc in Data Science at Christ
+          University, Bangalore (2026&ndash;2028)</strong>, after completing a
+          <strong>BSc in Physics</strong> at St. Albert&rsquo;s College, MG
+          University, Kerala. Physics gave me a grounding in quantitative
+          reasoning and statistical thinking, which is what first pulled me
+          toward data science &mdash; I wanted to apply that same rigor to
+          messier, real-world questions.
+        </p>
+        <p class="about-text">
+          My technical interests sit at the intersection of
+          <strong>statistics, time series analysis and machine learning</strong>,
+          and I&rsquo;m increasingly drawn to applying these to
+          <strong>financial and market data</strong> &mdash; from volatility
+          modeling to sentiment analysis on financial news. Outside of
+          modeling, I also write about what I&rsquo;m learning, which keeps me
+          honest about actually understanding a concept rather than just
+          using it.
+        </p>
+        <p class="about-text">
+          My goal is to grow into a <strong>Financial Data Analyst or Research
+          Analyst</strong> role at a fintech startup, working on problems in
+          spaces like neobanking, payments, lending or insurtech.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. SKILLS
+         EDIT ME: add or remove <li> tags inside each .skill-list
+         to update your skill set. No percentages, on purpose.
+    ========================================================== -->
+    <section id="skills" class="section">
+      <p class="eyebrow">~/skills</p>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <h3>Programming</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card fade-in">
+          <h3>Data Analysis</h3>
+          <ul class="skill-list">
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Statistical Hypothesis Testing</li>
+          </ul>
+        </div>
+
+        <div class="skill-card fade-in">
+          <h3>Machine Learning</h3>
+          <ul class="skill-list">
+            <li>Scikit-learn</li>
+            <li>Regression &amp; Classification</li>
+            <li>Time Series (ARIMA, GARCH)</li>
+            <li>Feature Engineering</li>
+            <li>Model Evaluation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card fade-in">
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li>Jupyter Notebook</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. PROJECTS
+         EDIT ME: to add a new project, copy one .project-card
+         block and edit its contents. Status badges are honest —
+         update them as projects move from Planned to Completed.
+    ========================================================== -->
+    <section id="projects" class="section">
+      <p class="eyebrow">~/projects</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card fade-in">
+          <div class="project-head">
+            <h3>Stock Volatility Analysis</h3>
+            <span class="status status-done">Completed</span>
+          </div>
+          <p class="project-desc">
+            Modeled and compared volatility behavior across multiple stock
+            tickers using GARCH(1,1) and ARIMA, alongside cross-asset
+            correlation analysis, to support risk-aware analysis.
+          </p>
+          <p class="project-objective"><strong>Objective:</strong> Build a repeatable framework for measuring and comparing volatility across assets.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Pandas</span><span>GARCH</span><span>ARIMA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dhrishnoel/Stock-Volatality-Analysis" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-head">
+            <h3>X-Ray Baggage Threat Detection</h3>
+            <span class="status status-done">Completed</span>
+          </div>
+          <p class="project-desc">
+            A CNN-based image classification project trained to flag
+            potential threat items in X-ray baggage scans, exploring
+            deep learning beyond tabular data.
+          </p>
+          <p class="project-objective"><strong>Objective:</strong> Apply convolutional neural networks to a real image-classification problem end to end.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>CNN</span><span>Deep Learning</span>
+          </div>
+          <div class="project-links">
+            <!-- EDIT ME: add your repo link for this project -->
+            <a href="https://github.com/dhrishnoel" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-head">
+            <h3>Loan Default Prediction</h3>
+            <span class="status status-progress">In Progress</span>
+          </div>
+          <p class="project-desc">
+            A classification project to predict the likelihood of loan
+            default from applicant and account-level data &mdash; part of a
+            broader fintech-focused project pipeline.
+          </p>
+          <p class="project-objective"><strong>Objective:</strong> Build and evaluate a classifier that estimates loan default risk.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Classification</span>
+          </div>
+          <div class="project-links">
+            <!-- EDIT ME: add your repo link once published -->
+            <span class="link-placeholder">Repo coming soon</span>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-head">
+            <h3>Financial News Sentiment Analysis</h3>
+            <span class="status status-planned">Planned</span>
+          </div>
+          <p class="project-desc">
+            An NLP project analyzing sentiment in financial news headlines
+            and articles, exploring its relationship with short-term market
+            movement.
+          </p>
+          <p class="project-objective"><strong>Objective:</strong> Extract sentiment signal from unstructured financial text.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>NLP</span><span>Pandas</span>
+          </div>
+          <div class="project-links">
+            <span class="link-placeholder">Repo coming soon</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. EDUCATION
+         EDIT ME: update years/coursework as your program progresses.
+    ========================================================== -->
+    <section id="education" class="section">
+      <p class="eyebrow">~/education</p>
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <span class="timeline-year">2026 &ndash; 2028</span>
+          <h3>MSc Data Science</h3>
+          <p class="timeline-org">Christ University, Bangalore</p>
+          <p class="timeline-detail">Relevant coursework: Probability &amp; Distribution Theory, Statistical Methods, Machine Learning, Python for Data Science.</p>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <!-- EDIT ME: add your graduation year -->
+          <span class="timeline-year">[YEAR]</span>
+          <h3>BSc Physics</h3>
+          <p class="timeline-org">St. Albert&rsquo;s College, MG University, Kerala</p>
+          <p class="timeline-detail">Core coursework in classical &amp; quantum mechanics, statistics and mathematical methods.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. CERTIFICATIONS
+         EDIT ME: replace this placeholder with real certification
+         cards as you complete them &mdash; copy the commented
+         template below.
+    ========================================================== -->
+    <section id="certifications" class="section">
+      <p class="eyebrow">~/certifications</p>
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="cert-empty fade-in">
+        <p>No certifications listed yet &mdash; currently focused on coursework and applied projects.</p>
+      </div>
+
+      <!--
+      TEMPLATE — copy this block into a .cert-grid to add a real certification:
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Certification Name</h3>
+          <p class="cert-org">Issuing Organization</p>
+          <p class="cert-date">Month Year</p>
+          <a href="#" class="btn btn-small">View Credential</a>
+        </div>
+      </div>
+      -->
+    </section>
+
+    <!-- =========================================================
+         7. EXPERIENCE
+         EDIT ME: replace this placeholder once you have roles
+         to list. Copy the commented template below per role.
+    ========================================================== -->
+    <section id="experience" class="section">
+      <p class="eyebrow">~/experience</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="cert-empty fade-in">
+        <p>No formal work experience yet &mdash; this section will fill in as internships and roles happen.</p>
+      </div>
+
+      <!--
+      TEMPLATE — copy this block into a .timeline to add a role:
+
+      <div class="timeline-item">
+        <span class="timeline-year">Month Year &ndash; Month Year</span>
+        <h3>Job / Role Title</h3>
+        <p class="timeline-org">Organization</p>
+        <ul class="timeline-detail">
+          <li>Responsibility or achievement</li>
+          <li>Responsibility or achievement</li>
+        </ul>
+      </div>
+      -->
+    </section>
+
+    <!-- =========================================================
+         8. RESUME
+    ========================================================== -->
+    <section id="resume" class="section resume-section">
+      <p class="eyebrow">~/resume</p>
+      <h2 class="section-title">Resume</h2>
+      <p class="about-text">Download a copy of my resume, or view it directly in your browser.</p>
+      <div class="hero-actions">
+        <!-- Both buttons point to the same file — replace assets/resume.pdf to update -->
+        <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Resume</a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. CONTACT
+         EDIT ME: replace the email and LinkedIn placeholders.
+    ========================================================== -->
+    <section id="contact" class="section">
+      <p class="eyebrow">~/contact</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="about-text">Open to internship and entry-level Data Science / Analyst opportunities &mdash; feel free to reach out.</p>
+
+      <div class="contact-list">
+        <!-- EDIT ME: replace with your real email -->
+        <a href="mailto:your.email@example.com" class="contact-item">your.email@example.com</a>
+        <a href="https://www.linkedin.com/in/YOUR-USERNAME/" class="contact-item" target="_blank" rel="noopener noreferrer">linkedin.com/in/YOUR-USERNAME</a>
+        <a href="https://github.com/dhrishnoel" class="contact-item" target="_blank" rel="noopener noreferrer">github.com/dhrishnoel</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       10. FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Dhrishh. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/YOUR-USERNAME/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/dhrishnoel" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
